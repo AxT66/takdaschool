@@ -1,1 +1,1656 @@
-<P>hello</P>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Takdah Grace Academy | Class Nursery to ICSE | 6th Mile, Naya Busty, Darjeeling</title>
+  <meta name="description" content="Takdah Grace Academy is a premier co-educational ICSE school located at 6th Mile, Naya Busty, Dist. Darjeeling, West Bengal. Offering holistic education from Class Nursery to Class X (ICSE). Director: Mr. Bhupen Dukpa | Principal: Mr. Chandan Singh.">
+  
+  <!-- Tailwind CSS CDN with Custom Theme Config (Light Theme Focus) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              50: '#F0FDF4',
+              100: '#DCFCE7',
+              200: '#BBF7D0',
+              300: '#86EFAC',
+              400: '#4ADE80',
+              500: '#22C55E',
+              600: '#16A34A',
+              700: '#047857',
+              800: '#065F46',
+              900: '#064E3B',
+              950: '#022C22',
+            },
+            terracotta: {
+              50: '#FFF7ED',
+              100: '#FFEDD5',
+              200: '#FED7AA',
+              300: '#FDBA74',
+              400: '#FB923C',
+              500: '#F97316',
+              600: '#EA580C',
+              700: '#C2410C',
+              800: '#9A3412',
+              900: '#7C2D12',
+            },
+            amberGold: {
+              400: '#FBBF24',
+              500: '#F59E0B',
+              600: '#D97706',
+              700: '#B45309',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            crest: ['"Cinzel"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles (Light Theme) -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-slate-50 text-slate-800 selection:bg-emerald-600 selection:text-white font-sans antialiased overflow-x-hidden">
+
+  <!-- ========================================================================
+       TOP ANNOUNCEMENT BAR
+       ======================================================================== -->
+  <div class="bg-forest-900 text-emerald-100 text-xs py-2 px-4 relative z-50 border-b border-forest-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center space-x-2">
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded text-[10px] font-bold bg-amberGold-500 text-slate-950 uppercase tracking-wider pulse-beacon">
+          Admissions 2026-27
+        </span>
+        <span class="text-emerald-100/90 font-medium">Enrolling Class Nursery to Class X (ICSE) • 6th Mile, Naya Busty, Darjeeling</span>
+      </div>
+      <div class="flex items-center space-x-4 sm:space-x-6 text-emerald-100">
+        <!-- Self-Service Tracking -->
+        <button onclick="openModal('tracker-modal')" class="hover:text-amberGold-400 transition flex items-center space-x-1.5 text-xs text-amberGold-300 font-semibold">
+          <i data-lucide="search" class="w-3.5 h-3.5"></i>
+          <span>Track Application</span>
+        </button>
+        <a href="#tuition-calc" class="hover:text-amberGold-400 transition flex items-center space-x-1">
+          <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+          <span>Fee Calculator</span>
+        </a>
+        <!-- Admin Dashboard Access -->
+        <button onclick="openAdminDashboard()" class="hover:text-amberGold-300 transition flex items-center space-x-1 text-white font-semibold border-l border-forest-700 pl-3">
+          <i data-lucide="shield" class="w-3.5 h-3.5 text-amberGold-400"></i>
+          <span>Staff & Admin Portal</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       PRIMARY NAVIGATION
+       ======================================================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Crest matching the green roof signboard -->
+        <a href="#" class="flex items-center space-x-3.5 group">
+          <div class="w-12 h-12 rounded-xl bg-forest-800 p-0.5 shadow-md shadow-forest-800/20 group-hover:scale-105 transition-transform duration-300">
+            <div class="w-full h-full bg-forest-900 rounded-[10px] flex items-center justify-center border border-amberGold-400/50">
+              <span class="font-crest font-black text-xl text-amberGold-400 tracking-tighter">GA</span>
+            </div>
+          </div>
+          <div>
+            <div class="font-crest font-extrabold text-lg sm:text-xl tracking-wider text-slate-900 flex items-center space-x-1.5">
+              <span>TAKDAH GRACE ACADEMY</span>
+            </div>
+            <div class="text-[10px] font-bold tracking-widest text-forest-700 uppercase">
+              Class Nursery to ICSE • 6th Mile, Darjeeling
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Menu Links -->
+        <nav class="hidden lg:flex items-center space-x-6 text-sm font-semibold text-slate-600">
+          <a href="#about" class="hover:text-forest-700 transition">About Academy</a>
+          <a href="#leadership" class="hover:text-forest-700 transition">Leadership</a>
+          <a href="#academics" class="hover:text-forest-700 transition">Curriculum</a>
+          <a href="#notices" class="hover:text-forest-700 transition">Notice Board</a>
+          <a href="#facilities" class="hover:text-forest-700 transition">Campus Facilities</a>
+          <a href="#gallery" class="hover:text-forest-700 transition">Photo Gallery</a>
+          <a href="#tuition-calc" class="hover:text-forest-700 transition">Fee Calculator</a>
+          <a href="#events" class="hover:text-forest-700 transition">Calendar</a>
+        </nav>
+
+        <!-- Right Side CTAs -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <button onclick="openAdminDashboard()" class="px-3.5 py-2 rounded-lg border border-slate-300 hover:border-forest-700 text-xs font-semibold text-slate-700 hover:text-forest-800 transition flex items-center space-x-1.5 bg-slate-50">
+            <i data-lucide="settings" class="w-3.5 h-3.5 text-forest-700"></i>
+            <span>Manage Site</span>
+          </button>
+          
+          <button onclick="openInquiryModal()" class="px-5 py-2.5 rounded-lg bg-terracotta-700 hover:bg-terracotta-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-terracotta-700/20 active:scale-95 flex items-center space-x-1.5">
+            <span>Apply Online</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Hamburger -->
+        <div class="lg:hidden flex items-center space-x-2">
+          <button id="mobile-menu-btn" class="p-2.5 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Navigation Menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-menu-drawer" class="fixed inset-0 z-50 bg-white/98 backdrop-blur-xl hidden flex flex-col justify-between p-6">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-200">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-lg bg-forest-800 flex items-center justify-center font-crest font-bold text-amberGold-400 text-lg">
+            GA
+          </div>
+          <div>
+            <span class="font-crest font-bold text-slate-900 text-base block">Takdah Grace Academy</span>
+            <span class="text-[10px] text-forest-700 font-bold uppercase">6th Mile, Darjeeling</span>
+          </div>
+        </div>
+        <button id="mobile-menu-close" class="p-2 text-slate-500 hover:text-slate-900">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-4 pt-6 text-base font-semibold text-slate-700">
+        <a href="#about" class="mobile-nav-link hover:text-forest-700">About the Academy</a>
+        <a href="#leadership" class="mobile-nav-link hover:text-forest-700">Director & Principal Messages</a>
+        <a href="#academics" class="mobile-nav-link hover:text-forest-700">Nursery to Class X (ICSE)</a>
+        <a href="#notices" class="mobile-nav-link hover:text-forest-700">Notice Board Circulars</a>
+        <a href="#facilities" class="mobile-nav-link hover:text-forest-700">Campus Facilities</a>
+        <a href="#gallery" class="mobile-nav-link hover:text-forest-700">Photo Gallery</a>
+        <a href="#tuition-calc" class="mobile-nav-link hover:text-forest-700">Fee Structure (INR)</a>
+        <a href="#events" class="mobile-nav-link hover:text-forest-700">Academic Calendar</a>
+        <a href="#map-section" class="mobile-nav-link hover:text-forest-700">Location Map</a>
+      </nav>
+    </div>
+    <div class="space-y-3 pt-6 border-t border-slate-200">
+      <button onclick="openAdminDashboard(); document.getElementById('mobile-menu-drawer').classList.add('hidden');" class="w-full py-3 rounded-xl border border-forest-600 text-sm font-semibold text-forest-800 flex items-center justify-center space-x-2 bg-forest-50">
+        <i data-lucide="settings" class="w-4 h-4 text-forest-700"></i>
+        <span>Open Staff & Admin Dashboard</span>
+      </button>
+      <button onclick="openModal('tracker-modal'); document.getElementById('mobile-menu-drawer').classList.add('hidden');" class="w-full py-3 rounded-xl border border-slate-300 text-sm font-semibold text-slate-700 flex items-center justify-center space-x-2 bg-white">
+        <i data-lucide="search" class="w-4 h-4 text-amberGold-600"></i>
+        <span>Track Submitted Application</span>
+      </button>
+      <button onclick="openInquiryModal(); document.getElementById('mobile-menu-drawer').classList.add('hidden');" class="w-full py-3 rounded-xl bg-terracotta-700 text-white font-bold text-sm uppercase tracking-wider flex items-center justify-center space-x-2 shadow-md">
+        <span>Admission Form 2026-27</span>
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       HERO SECTION (Light Theme with Real Building Photo)
+       ======================================================================== -->
+  <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-8 pb-16 bg-gradient-to-b from-white via-slate-50 to-emerald-50/40">
+    <canvas id="hero-canvas"></canvas>
+
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-emerald-100/60 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-10 right-10 w-[350px] h-[350px] bg-amber-100/50 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center space-x-2.5 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 pulse-beacon"></span>
+            <span class="font-bold text-forest-800">Class Nursery to ICSE</span>
+            <span class="text-slate-400">•</span>
+            <span class="text-forest-700 font-medium">6th Mile, Naya Busty, Dist. Darjeeling</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif-academy font-bold text-slate-900 tracking-tight leading-[1.08]">
+            Takdah Grace Academy 
+            <span class="terracotta-gradient-text block mt-1">Excellence in the Hills.</span>
+          </h1>
+
+          <p class="text-slate-600 text-base sm:text-lg lg:text-xl font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            Fostering discipline, moral integrity, academic brilliance, and holistic character from <strong>Class Nursery to Class X (ICSE)</strong> amidst the pristine pine forests and clean mountain air of 6th Mile, Darjeeling, West Bengal.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 text-xs text-slate-700 pt-1">
+            <div class="px-3.5 py-1.5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center space-x-2">
+              <span class="text-terracotta-700 font-bold">Director:</span>
+              <span class="font-bold text-slate-900">Mr. Bhupen Dukpa</span>
+            </div>
+            <div class="px-3.5 py-1.5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center space-x-2">
+              <span class="text-forest-700 font-bold">Principal:</span>
+              <span class="font-bold text-slate-900">Mr. Chandan Singh</span>
+            </div>
+          </div>
+
+          <!-- Action CTAs -->
+          <div class="pt-3 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <button onclick="openInquiryModal()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-terracotta-700 hover:bg-terracotta-800 text-white font-extrabold text-sm uppercase tracking-wider transition-all duration-300 shadow-lg shadow-terracotta-700/25 hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center space-x-2.5">
+              <span>Apply Online (2026-27)</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </button>
+
+            <button onclick="openAdminDashboard()" class="w-full sm:w-auto px-6 py-4 rounded-xl bg-white hover:bg-slate-50 text-forest-800 font-semibold text-sm border border-forest-600/30 hover:border-forest-600 transition-all shadow-sm flex items-center justify-center space-x-2 group">
+              <i data-lucide="settings" class="w-4 h-4 text-forest-700"></i>
+              <span>Staff Management Dashboard</span>
+            </button>
+          </div>
+
+          <!-- Trust Badges Inline -->
+          <div class="pt-4 border-t border-slate-200 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-600">
+            <div class="flex items-center space-x-2">
+              <i data-lucide="award" class="w-4 h-4 text-forest-700"></i>
+              <span>ICSE Curriculum (Class Nursery to X)</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-terracotta-700"></i>
+              <span>6th Mile, Naya Busty, Darjeeling</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i data-lucide="camera" class="w-4 h-4 text-amberGold-600"></i>
+              <span>Real Campus Photos & Dynamic Fees</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual: Real Building Photograph -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-white group">
+              <img src="images/grace-academy-campus.png" 
+                   alt="Takdah Grace Academy 6th Mile Campus Building with green Grace Academy roof-sign" 
+                   class="w-full h-[460px] object-cover group-hover:scale-105 transition-transform duration-700">
+              
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/20 to-transparent"></div>
+              
+              <!-- Floating Highlight Badge Top -->
+              <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl border border-slate-200 shadow-lg animate-soft-float">
+                <div class="flex items-center space-x-2">
+                  <div class="w-7 h-7 rounded-lg bg-forest-100 flex items-center justify-center text-forest-800">
+                    <i data-lucide="camera" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <div class="text-[10px] text-slate-500 font-semibold uppercase">Official Campus</div>
+                    <div class="text-xs font-bold text-slate-900">6th Mile, Naya Busty</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Building Card Bottom -->
+              <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-slate-200 shadow-xl">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-forest-800 text-amberGold-400 font-crest font-bold flex items-center justify-center text-sm shadow-sm">
+                      GA
+                    </div>
+                    <div>
+                      <div class="text-sm font-bold text-slate-900">Grace Academy Building</div>
+                      <div class="text-[11px] text-forest-800 font-medium">Terracotta Block • Main Entrance</div>
+                    </div>
+                  </div>
+                  <span class="px-2.5 py-1 rounded-full bg-forest-100 text-forest-800 font-bold text-[10px] border border-forest-200">
+                    Est. 6th Mile
+                  </span>
+                </div>
+                <p class="text-xs text-slate-600 mt-2 italic leading-relaxed">
+                  "Surrounded by peaceful pine woods and fresh Himalayan breezes in Darjeeling."
+                </p>
+              </div>
+
+            </div>
+
+            <div class="absolute -bottom-6 -right-6 w-36 h-36 bg-terracotta-200/50 rounded-full blur-2xl -z-10"></div>
+            <div class="absolute -top-6 -left-6 w-36 h-36 bg-emerald-200/50 rounded-full blur-2xl -z-10"></div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       KEY STATS & IMPACT RIBBON (Light Theme)
+       ======================================================================== -->
+  <section id="stats-ribbon" class="border-y border-slate-200 bg-white py-10 relative z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-200">
+        
+        <div class="pt-4 md:pt-0 px-4">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif-academy text-terracotta-700 counter-val" data-target="100" data-suffix="%">
+            0%
+          </div>
+          <div class="text-xs uppercase tracking-wider text-slate-800 font-bold mt-2">ICSE Board Success</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">Focus on First Division passes</div>
+        </div>
+
+        <div class="pt-4 md:pt-0 px-4">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif-academy text-forest-700 counter-val" data-target="18" data-prefix="1:">
+            1:0
+          </div>
+          <div class="text-xs uppercase tracking-wider text-slate-800 font-bold mt-2">Teacher-Student Ratio</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">Close individual attention & mentoring</div>
+        </div>
+
+        <div class="pt-4 md:pt-0 px-4">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif-academy text-slate-900 counter-val" data-target="12" data-suffix=" Classes">
+            0 Classes
+          </div>
+          <div class="text-xs uppercase tracking-wider text-slate-800 font-bold mt-2">Nursery to Class X</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">Foundational to Secondary ICSE</div>
+        </div>
+
+        <div class="pt-4 md:pt-0 px-4">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif-academy text-amberGold-600 counter-val" data-target="3" data-suffix=" Languages">
+            0 Languages
+          </div>
+          <div class="text-xs uppercase tracking-wider text-slate-800 font-bold mt-2">Multilingual Fluency</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">English, Nepali, and Hindi</div>
+        </div>
+
+        <div class="pt-4 md:pt-0 px-4 col-span-2 md:col-span-1">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif-academy text-forest-800 counter-val" data-target="6" data-suffix="th Mile">
+            0th Mile
+          </div>
+          <div class="text-xs uppercase tracking-wider text-slate-800 font-bold mt-2">Serene Mountain Campus</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">Naya Busty, Takdah, Darjeeling</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       DYNAMIC NOTICE BOARD (Light Theme Bulletin)
+       ======================================================================== -->
+  <section id="notices" class="py-16 bg-slate-100/70 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-forest-700 flex items-center space-x-1.5">
+            <i data-lucide="bell" class="w-3.5 h-3.5"></i>
+            <span>Live Circulars & Updates</span>
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-serif-academy font-bold text-slate-900 mt-1">
+            Official Notice Board
+          </h2>
+          <p class="text-xs text-slate-500">Stored dynamically in local browser storage. Managed by school administration.</p>
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <button onclick="openAdminDashboard()" class="px-4 py-2 rounded-xl bg-white hover:bg-slate-50 text-xs font-semibold text-slate-800 border border-slate-300 shadow-sm flex items-center space-x-1.5 transition">
+            <i data-lucide="plus-circle" class="w-3.5 h-3.5 text-forest-700"></i>
+            <span>Post Circular (Staff)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Notice Cards Container (Rendered by js/admin.js) -->
+      <div id="public-notices-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Injected via js/admin.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       LEADERSHIP SECTION: DIRECTOR & PRINCIPAL MESSAGES
+       ======================================================================== -->
+  <section id="leadership" class="py-20 relative bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amberGold-700 border border-amber-200 uppercase tracking-widest">
+          Institutional Leadership
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-serif-academy font-bold text-slate-900 tracking-tight">
+          Guiding Takdah Grace Academy with Vision & Grace
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Dedicated leadership committed to providing high-quality ICSE schooling to the children of Takdah, 6th Mile, Naya Busty, and the greater Darjeeling region.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        
+        <!-- Director's Profile -->
+        <div class="bg-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-200 relative shadow-sm hover:shadow-md transition space-y-6">
+          <div class="flex items-center space-x-4 border-b border-slate-200 pb-6">
+            <div class="w-16 h-16 rounded-2xl bg-amber-100 border border-amber-200 flex items-center justify-center text-amberGold-700 shadow-sm">
+              <i data-lucide="user-check" class="w-8 h-8"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-amberGold-700">Academy Director</span>
+              <h3 class="text-2xl font-serif-academy font-bold text-slate-900">Mr. Bhupen Dukpa</h3>
+              <p class="text-xs text-slate-500">Director, Takdah Grace Academy</p>
+            </div>
+          </div>
+
+          <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
+            <p>
+              "At Takdah Grace Academy, our dream is to make world-class education accessible right here in 6th Mile, Naya Busty, Darjeeling. We believe that true education reaches far beyond textbooks—it must plant seeds of deep self-respect, moral values, community responsibility, and high intellectual ambition."
+            </p>
+            <p>
+              "We take pride in our serene mountain setting, where children grow free from urban chaos, surrounded by pristine nature, disciplined faculty, and caring mentors. Every student who enters our gates from Nursery through Class X is nurtured with boundless patience and unwavering dedication."
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+            <div class="text-xs text-amberGold-700 font-bold uppercase tracking-wider">
+              Mr. Bhupen Dukpa
+            </div>
+            <div class="text-slate-500 text-xs italic">
+              Director • Takdah Grace Academy
+            </div>
+          </div>
+        </div>
+
+        <!-- Principal's Profile -->
+        <div class="bg-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-200 relative shadow-sm hover:shadow-md transition space-y-6">
+          <div class="flex items-center space-x-4 border-b border-slate-200 pb-6">
+            <div class="w-16 h-16 rounded-2xl bg-forest-100 border border-forest-200 flex items-center justify-center text-forest-800 shadow-sm">
+              <i data-lucide="graduation-cap" class="w-8 h-8"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-forest-700">Academy Principal</span>
+              <h3 class="text-2xl font-serif-academy font-bold text-slate-900">Mr. Chandan Singh</h3>
+              <p class="text-xs text-slate-500">Principal, Takdah Grace Academy</p>
+            </div>
+          </div>
+
+          <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
+            <p>
+              "It is my distinct privilege to lead the academic faculty of Takdah Grace Academy. Preparing students for the rigorous ICSE curriculum requires consistent intellectual discipline, interactive classroom dialogue, well-equipped science laboratories, and strong communication skills in English, Nepali, and Hindi."
+            </p>
+            <p>
+              "Our dedicated teachers ensure that every child—whether just starting their educational journey in Class Nursery or preparing for their ICSE board examinations in Class X—receives focused guidance, regular evaluation, co-curricular exposure, and warm pastoral care."
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+            <div class="text-xs text-forest-700 font-bold uppercase tracking-wider">
+              Mr. Chandan Singh
+            </div>
+            <div class="text-slate-500 text-xs italic">
+              Principal • Takdah Grace Academy
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ABOUT SECTION (Featuring Real Building)
+       ======================================================================== -->
+  <section id="about" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 relative">
+          <div class="rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-white">
+            <img src="images/grace-academy-campus.png" 
+                 alt="Grace Academy building exterior, 6th Mile, Naya Busty" 
+                 class="w-full h-[420px] object-cover">
+          </div>
+          <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-2xl border border-slate-200 text-xs text-slate-700 shadow-xl max-w-xs">
+            <div class="font-bold text-forest-800 mb-1 flex items-center space-x-1.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-terracotta-700"></i>
+              <span>6th Mile, Naya Busty</span>
+            </div>
+            <span>Surrounded by pine canopies, tea gardens, and fresh Himalayan breezes.</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center space-x-2 text-xs font-semibold text-forest-700 uppercase tracking-widest bg-forest-50 px-3 py-1 rounded-full border border-forest-200">
+            <i data-lucide="trees" class="w-4 h-4"></i>
+            <span>Our Campus & Tradition</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif-academy font-bold text-slate-900 tracking-tight leading-tight">
+            Rooted in Darjeeling's Renowned Tradition of Education.
+          </h2>
+
+          <div class="space-y-4 text-slate-600 leading-relaxed text-sm sm:text-base">
+            <p>
+              Located at <strong>6th Mile, Naya Busty in Dist. Darjeeling, West Bengal</strong>, Takdah Grace Academy stands as a beacon of quality schooling for families across Takdah Cantonment, Rangliot, Tinchuley, and adjoining tea estates.
+            </p>
+            <p>
+              The hill district of Darjeeling has long been globally celebrated for its prestigious educational institutions. Takdah Grace Academy upholds this fine legacy by combining the rigorous standards of the <strong>ICSE curriculum</strong> with affordable fees, attentive mentoring, modern digital teaching tools, and traditional values of courtesy and respect.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <div class="flex items-center space-x-2 text-sm text-slate-800 font-medium">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-forest-700 flex-shrink-0"></i>
+              <span>Class Nursery to Class X (ICSE)</span>
+            </div>
+            <div class="flex items-center space-x-2 text-sm text-slate-800 font-medium">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-forest-700 flex-shrink-0"></i>
+              <span>Dedicated Science & Computer Labs</span>
+            </div>
+            <div class="flex items-center space-x-2 text-sm text-slate-800 font-medium">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-forest-700 flex-shrink-0"></i>
+              <span>English Medium Instruction</span>
+            </div>
+            <div class="flex items-center space-x-2 text-sm text-slate-800 font-medium">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-forest-700 flex-shrink-0"></i>
+              <span>School Bus & Transport Assistance</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ACADEMIC PATHWAYS: NURSERY TO ICSE
+       ======================================================================== -->
+  <section id="academics" class="py-20 relative bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-forest-50 text-forest-800 border border-forest-200 uppercase tracking-widest">
+          Academic Continuum
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-serif-academy font-bold text-slate-900 tracking-tight">
+          Curriculum from Class Nursery to ICSE (Class X)
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          A progressive, child-centered curriculum designed to cultivate strong linguistic fluency, mathematical clarity, scientific curiosity, and moral character.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10">
+        <button data-tab="nursery" class="academic-tab-btn px-5 py-3 rounded-xl text-xs sm:text-sm font-semibold transition bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 flex items-center space-x-2 shadow-sm">
+          <i data-lucide="sparkles" class="w-4 h-4 text-amberGold-600"></i>
+          <span>Early Years: Nursery, LKG & UKG</span>
+        </button>
+
+        <button data-tab="primary" class="academic-tab-btn px-5 py-3 rounded-xl text-xs sm:text-sm font-semibold transition bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 flex items-center space-x-2 shadow-sm">
+          <i data-lucide="book-open" class="w-4 h-4 text-forest-700"></i>
+          <span>Primary Section: Classes I – V</span>
+        </button>
+
+        <button data-tab="middle" class="academic-tab-btn px-5 py-3 rounded-xl text-xs sm:text-sm font-semibold transition bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 flex items-center space-x-2 shadow-sm">
+          <i data-lucide="compass" class="w-4 h-4 text-blue-600"></i>
+          <span>Middle School: Classes VI – VIII</span>
+        </button>
+
+        <button data-tab="icse" class="academic-tab-btn px-5 py-3 rounded-xl text-xs sm:text-sm font-semibold transition bg-forest-700 text-white shadow-md shadow-forest-700/25 flex items-center space-x-2">
+          <i data-lucide="award" class="w-4 h-4"></i>
+          <span>ICSE Secondary: Classes IX – X</span>
+        </button>
+      </div>
+
+      <div id="academic-content-container" class="bg-white p-6 sm:p-10 rounded-3xl border border-slate-200 shadow-md relative">
+        <!-- Rendered by JS on mount -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       DYNAMIC CAMPUS FACILITIES (Managed by Admin)
+       ======================================================================== -->
+  <section id="facilities" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs font-bold text-forest-700 uppercase tracking-widest">Takdah Hill Infrastructure</span>
+          <h2 class="text-3xl sm:text-4xl font-serif-academy font-bold text-slate-900 mt-1">
+            Facilities at 6th Mile, Naya Busty
+          </h2>
+          <p class="text-xs text-slate-500">Facilities can be added, updated, and changed via the Staff Portal.</p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2">
+          <button data-filter="all" class="facility-filter-btn px-4 py-2 rounded-lg bg-forest-700 text-white text-xs font-semibold transition shadow-sm">
+            All Facilities
+          </button>
+          <button data-filter="labs" class="facility-filter-btn px-4 py-2 rounded-lg bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 text-xs font-semibold transition">
+            Science & IT Labs
+          </button>
+          <button data-filter="sports" class="facility-filter-btn px-4 py-2 rounded-lg bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 text-xs font-semibold transition">
+            Sports & Ground
+          </button>
+          <button data-filter="campus" class="facility-filter-btn px-4 py-2 rounded-lg bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 text-xs font-semibold transition">
+            Library & Building
+          </button>
+          <button onclick="openAdminDashboard(); document.querySelector('[data-admin-target=\'admin-facilities-section\']')?.click();" class="px-3.5 py-2 rounded-lg bg-terracotta-50 hover:bg-terracotta-100 text-terracotta-800 border border-terracotta-200 text-xs font-semibold transition flex items-center space-x-1.5 shadow-sm">
+            <i data-lucide="edit-3" class="w-3.5 h-3.5"></i>
+            <span>Change Facilities (Admin)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- DYNAMIC FACILITIES CONTAINER (Injected via js/admin.js) -->
+      <div id="public-facilities-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Injected via js/admin.js from window.tgaStore -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       DYNAMIC PHOTO GALLERY SECTION (Admin Uploaded Pictures)
+       ======================================================================== -->
+  <section id="gallery" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-12">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-forest-700 flex items-center space-x-1.5">
+            <i data-lucide="camera" class="w-3.5 h-3.5"></i>
+            <span>Visual Glimpse</span>
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-serif-academy font-bold text-slate-900 mt-1">
+            Campus Life & Photo Gallery
+          </h2>
+          <p class="text-xs text-slate-500">Authentic moments from Takdah Grace Academy. Staff can upload new photos directly in the Staff Portal.</p>
+        </div>
+
+        <button onclick="openAdminDashboard(); document.querySelector('[data-admin-target=\'admin-gallery-section\']')?.click();" class="px-4 py-2.5 rounded-xl bg-forest-50 hover:bg-forest-100 text-forest-800 font-semibold text-xs border border-forest-200 flex items-center space-x-2 transition shadow-sm">
+          <i data-lucide="upload-cloud" class="w-4 h-4 text-forest-700"></i>
+          <span>Upload New Photos (Admin)</span>
+        </button>
+      </div>
+
+      <!-- DYNAMIC PHOTO GALLERY GRID -->
+      <div id="public-gallery-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Injected via js/admin.js from window.tgaStore -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FEE CALCULATOR (INR ₹) WITH DYNAMIC RATES & QUOTE SAVER
+       ======================================================================== -->
+  <section id="tuition-calc" class="py-20 relative bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Form Controls -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amberGold-800 border border-amber-200 uppercase tracking-widest">
+                Transparent Hill Schooling
+              </span>
+              <h2 class="text-3xl sm:text-4xl font-serif-academy font-bold text-slate-900 mt-2">
+                Annual Fee Calculator (INR ₹)
+              </h2>
+              <p class="text-slate-600 text-sm mt-1">
+                Select your child's class and optional hostel / van transport to view an instant estimate of fees at Takdah Grace Academy. Rates can be adjusted by school administrators.
+              </p>
+            </div>
+            <button onclick="openAdminDashboard(); document.querySelector('[data-admin-target=\'admin-fees-section\']')?.click();" class="self-start sm:self-center px-4 py-2.5 rounded-xl bg-forest-50 hover:bg-forest-100 text-forest-800 border border-forest-200 text-xs font-bold transition flex items-center space-x-2 shadow-sm whitespace-nowrap">
+              <i data-lucide="settings" class="w-4 h-4 text-forest-700"></i>
+              <span>Change Fees (Admin)</span>
+            </button>
+          </div>
+
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6">
+            
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                1. Select Class
+              </label>
+              <!-- Dynamically populated from tgaStore.getFees() -->
+              <select id="calc-grade" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 font-medium focus:outline-none focus:border-forest-600 shadow-sm">
+                <!-- Injected dynamically -->
+              </select>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                  2. Student Status
+                </label>
+                <select id="calc-boarding" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 font-medium focus:outline-none focus:border-forest-600 shadow-sm">
+                  <!-- Injected dynamically -->
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                  3. Meal / Tiffin Facility
+                </label>
+                <select id="calc-meals" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 font-medium focus:outline-none focus:border-forest-600 shadow-sm">
+                  <!-- Injected dynamically -->
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                4. Optional Transport & Activities
+              </label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <label class="flex items-center space-x-3 p-3 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:border-forest-600 transition shadow-sm">
+                  <input type="checkbox" id="calc-transport" class="w-4 h-4 text-forest-700 rounded border-slate-300 focus:ring-forest-600">
+                  <span id="calc-transport-label" class="text-xs text-slate-800 font-medium">School Van / Bus Service</span>
+                </label>
+
+                <label class="flex items-center space-x-3 p-3 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:border-forest-600 transition shadow-sm">
+                  <input type="checkbox" id="calc-clubs" class="w-4 h-4 text-forest-700 rounded border-slate-300 focus:ring-forest-600">
+                  <span id="calc-coaching-label" class="text-xs text-slate-800 font-medium">Special ICSE Coaching</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <div class="flex items-center justify-between mb-2">
+                <label class="text-xs font-bold uppercase tracking-wider text-slate-700">
+                  5. Sibling / Merit Concession
+                </label>
+                <span id="scholarship-pct-display" class="text-sm font-bold text-forest-800">10%</span>
+              </div>
+              <input type="range" id="calc-scholarship" min="0" max="50" step="5" value="10" class="w-full">
+              <div class="flex justify-between text-[10px] text-slate-500 font-medium mt-1">
+                <span>0% (Standard)</span>
+                <span>10% (Sibling Concession)</span>
+                <span>25% (Merit Scholar)</span>
+                <span>50% (Need-Based Aid)</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Real-time Projection Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-white p-8 rounded-3xl border-2 border-forest-600 shadow-xl relative overflow-hidden">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4 mb-6">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-forest-700">Takdah Grace Academy</span>
+                <div class="text-lg font-serif-academy font-bold text-slate-900">Estimated Annual Fee</div>
+              </div>
+              <div class="w-10 h-10 rounded-full bg-forest-100 text-forest-800 flex items-center justify-center">
+                <i data-lucide="receipt" class="w-5 h-5"></i>
+              </div>
+            </div>
+
+            <div class="space-y-3 text-xs">
+              <div class="flex justify-between text-slate-600">
+                <span>Annual Academic Tuition:</span>
+                <span id="out-base" class="font-bold text-slate-900">₹36,000</span>
+              </div>
+              <div class="flex justify-between text-forest-700">
+                <span>Sibling / Merit Concession:</span>
+                <span id="out-discount" class="font-bold">-₹3,600</span>
+              </div>
+              <div class="flex justify-between text-slate-600">
+                <span>Boarding / Hostel:</span>
+                <span id="out-boarding" class="font-bold text-slate-900">₹0</span>
+              </div>
+              <div class="flex justify-between text-slate-600">
+                <span>Transport & Add-ons:</span>
+                <span id="out-addons" class="font-bold text-slate-900">₹0</span>
+              </div>
+
+              <div class="border-t border-slate-200 pt-4 mt-2">
+                <div class="text-xs text-slate-500 font-bold uppercase tracking-wider">Total Net Annual Fee</div>
+                <div id="out-total" class="text-4xl sm:text-5xl font-extrabold font-serif-academy text-terracotta-700 tracking-tight mt-1">
+                  ₹32,400
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-200">
+                <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                  <div class="text-[10px] uppercase text-slate-500 font-semibold">Quarterly (4 Terms)</div>
+                  <div id="out-term" class="text-base font-bold text-slate-900 mt-0.5">₹8,100</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                  <div class="text-[10px] uppercase text-slate-500 font-semibold">Monthly Installment</div>
+                  <div id="out-monthly" class="text-base font-bold text-slate-900 mt-0.5">₹2,700</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 space-y-2.5">
+              <button onclick="saveLocalFeeQuote()" class="w-full py-3 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-bold text-xs uppercase tracking-wider transition flex items-center justify-center space-x-2 shadow-md shadow-forest-700/20">
+                <i data-lucide="bookmark-plus" class="w-4 h-4"></i>
+                <span>Save Quote to My Profile</span>
+              </button>
+
+              <button onclick="downloadTuitionEstimate()" class="w-full py-2.5 rounded-xl bg-amberGold-500 hover:bg-amberGold-600 text-slate-950 font-bold text-xs uppercase tracking-wider transition flex items-center justify-center space-x-2 shadow-sm">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                <span>Download Fee Structure (PDF)</span>
+              </button>
+            </div>
+
+            <p class="text-[10px] text-slate-500 text-center mt-4">
+              *Tuition fees include examinations, library, and sports facility access. Concessions available for siblings.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CAMPUS BLUEPRINT (Light Theme Vector Map)
+       ======================================================================== -->
+  <section id="map-section" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-forest-50 text-forest-800 border border-forest-200 uppercase tracking-widest">
+          Geographic Blueprint
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-serif-academy font-bold text-slate-900 tracking-tight">
+          Campus Map: 6th Mile, Naya Busty, Takdah
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Interactive blueprint of the Grace Academy campus in 6th Mile, Naya Busty, Dist. Darjeeling.
+        </p>
+      </div>
+
+      <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 shadow-md">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-8 relative rounded-2xl overflow-hidden border border-slate-200 bg-white">
+            <canvas id="campus-vector-canvas" class="w-full h-[420px] block"></canvas>
+            <div class="absolute bottom-3 left-3 px-3 py-1.5 rounded-lg bg-white/95 border border-slate-200 text-[11px] text-slate-700 shadow-sm backdrop-blur-md flex items-center space-x-2">
+              <span class="w-2 h-2 rounded-full bg-forest-600 animate-ping"></span>
+              <span>Takdah Hill Blueprint • Click numbered building pins</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 space-y-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-500">
+              Campus Precincts
+            </div>
+
+            <div class="grid grid-cols-1 gap-2">
+              <button data-id="1" class="map-pin active text-left p-3 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 flex items-center space-x-3 transition shadow-sm">
+                <span class="w-6 h-6 rounded-full bg-terracotta-700 text-white font-bold text-xs flex items-center justify-center flex-shrink-0">1</span>
+                <div>
+                  <div class="text-xs font-bold text-slate-900">Main Academic Building</div>
+                  <div class="text-[10px] text-slate-500">Terracotta 2-Storey Block</div>
+                </div>
+              </button>
+
+              <button data-id="2" class="map-pin text-left p-3 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 flex items-center space-x-3 transition shadow-sm">
+                <span class="w-6 h-6 rounded-full bg-forest-700 text-white font-bold text-xs flex items-center justify-center flex-shrink-0">2</span>
+                <div>
+                  <div class="text-xs font-bold text-slate-900">ICSE Science & IT Labs</div>
+                  <div class="text-[10px] text-slate-500">Physics, Chem, Bio & Computers</div>
+                </div>
+              </button>
+
+              <button data-id="3" class="map-pin text-left p-3 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 flex items-center space-x-3 transition shadow-sm">
+                <span class="w-6 h-6 rounded-full bg-amberGold-600 text-white font-bold text-xs flex items-center justify-center flex-shrink-0">3</span>
+                <div>
+                  <div class="text-xs font-bold text-slate-900">Assembly & Sports Ground</div>
+                  <div class="text-[10px] text-slate-500">Athletics, Volleyball & Drills</div>
+                </div>
+              </button>
+
+              <button data-id="4" class="map-pin text-left p-3 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 flex items-center space-x-3 transition shadow-sm">
+                <span class="w-6 h-6 rounded-full bg-blue-700 text-white font-bold text-xs flex items-center justify-center flex-shrink-0">4</span>
+                <div>
+                  <div class="text-xs font-bold text-slate-900">Administrative Office</div>
+                  <div class="text-[10px] text-slate-500">Director & Principal Chambers</div>
+                </div>
+              </button>
+
+              <button data-id="5" class="map-pin text-left p-3 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 flex items-center space-x-3 transition shadow-sm">
+                <span class="w-6 h-6 rounded-full bg-purple-700 text-white font-bold text-xs flex items-center justify-center flex-shrink-0">5</span>
+                <div>
+                  <div class="text-xs font-bold text-slate-900">Grace Residential Hostel</div>
+                  <div class="text-[10px] text-slate-500">Boarding & Dining Hall</div>
+                </div>
+              </button>
+            </div>
+
+            <!-- Detail Pin Box (Light Theme) -->
+            <div id="map-pin-detail" class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+              <!-- Rendered via JS -->
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       DYNAMIC EVENTS & CALENDAR (Light Theme)
+       ======================================================================== -->
+  <section id="events" class="py-20 relative bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs font-bold text-terracotta-700 uppercase tracking-widest">School Calendar</span>
+          <h2 class="text-3xl sm:text-4xl font-serif-academy font-bold text-slate-900 mt-1">
+            Academic Calendar & Events
+          </h2>
+          <p class="text-xs text-slate-500">RSVP counts and new events are stored dynamically in local browser storage.</p>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <button data-filter="all" class="event-filter-btn px-4 py-2 rounded-lg bg-forest-700 text-white text-xs font-bold transition shadow-sm">
+            All Events
+          </button>
+          <button data-filter="admissions" class="event-filter-btn px-4 py-2 rounded-lg bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 text-xs font-medium transition">
+            Admissions
+          </button>
+          <button data-filter="sports" class="event-filter-btn px-4 py-2 rounded-lg bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 text-xs font-medium transition">
+            Sports
+          </button>
+          <button data-filter="academic" class="event-filter-btn px-4 py-2 rounded-lg bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 text-xs font-medium transition">
+            Academic
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Events Container -->
+      <div id="public-events-container" class="space-y-4">
+        <!-- Rendered by js/admin.js from window.tgaStore -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       APPLICATION TRACKING MODAL (Light Theme)
+       ======================================================================== -->
+  <div id="tracker-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div class="modal-content bg-white max-w-xl w-full rounded-3xl border border-slate-200 p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto text-center">
+      
+      <button onclick="closeModal('tracker-modal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 transition focus:outline-none">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="w-14 h-14 rounded-2xl bg-forest-50 text-forest-800 border border-forest-200 flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="search" class="w-7 h-7"></i>
+      </div>
+
+      <h3 class="text-2xl font-serif-academy font-bold text-slate-900">Track Admission Application</h3>
+      <p class="text-xs text-slate-600 mt-1 max-w-md mx-auto">
+        Enter your Application Reference Code (e.g. <span class="text-terracotta-700 font-bold font-mono">TGA-2026-1042</span>) or registered parent mobile number to view real-time status.
+      </p>
+
+      <form id="tracker-form" class="mt-6 flex flex-col sm:flex-row gap-3">
+        <input type="text" id="tracker-input" required placeholder="Enter Reference Code or Mobile No." class="flex-1 bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-forest-600 font-mono">
+        <button type="submit" class="px-6 py-3 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-forest-700/25 flex items-center justify-center space-x-1.5">
+          <span>Search Status</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </button>
+      </form>
+
+      <div id="tracker-result" class="mt-6">
+        <!-- Rendered reactively -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       STAFF MANAGEMENT DASHBOARD MODAL (Full Admin Control Panel)
+       ======================================================================== -->
+  <div id="admin-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6">
+    <div class="modal-content bg-white max-w-5xl w-full rounded-3xl border border-slate-300 p-6 relative shadow-2xl max-h-[92vh] flex flex-col">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-forest-800 flex items-center justify-center text-white font-bold shadow-sm">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold font-serif-academy text-slate-900">Takdah Grace Academy — Staff Management Portal</h3>
+            <p class="text-xs text-slate-500">Director Mr. Bhupen Dukpa & Principal Mr. Chandan Singh • Local Browser Database</p>
+          </div>
+        </div>
+        <button onclick="closeModal('admin-modal')" class="p-2 text-slate-400 hover:text-slate-800">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Navigation Tabs (With Fees, Facilities, Gallery) -->
+      <div class="flex flex-wrap gap-2 pt-4 pb-2 border-b border-slate-200 text-xs font-semibold">
+        <button class="admin-nav-tab px-4 py-2 rounded-xl bg-forest-700 text-white flex items-center space-x-1.5 shadow-sm" data-admin-target="admin-applications-section">
+          <i data-lucide="users" class="w-3.5 h-3.5"></i>
+          <span>Applications</span>
+        </button>
+        <button class="admin-nav-tab px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 flex items-center space-x-1.5" data-admin-target="admin-fees-section">
+          <i data-lucide="calculator" class="w-3.5 h-3.5 text-amberGold-600"></i>
+          <span>Change Fees</span>
+        </button>
+        <button class="admin-nav-tab px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 flex items-center space-x-1.5" data-admin-target="admin-facilities-section">
+          <i data-lucide="building-2" class="w-3.5 h-3.5 text-terracotta-700"></i>
+          <span>Change Facilities</span>
+        </button>
+        <button class="admin-nav-tab px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 flex items-center space-x-1.5" data-admin-target="admin-gallery-section">
+          <i data-lucide="camera" class="w-3.5 h-3.5 text-blue-700"></i>
+          <span>Upload Pictures</span>
+        </button>
+        <button class="admin-nav-tab px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 flex items-center space-x-1.5" data-admin-target="admin-notices-section">
+          <i data-lucide="bell" class="w-3.5 h-3.5 text-forest-700"></i>
+          <span>Notices</span>
+        </button>
+        <button class="admin-nav-tab px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 flex items-center space-x-1.5" data-admin-target="admin-events-section">
+          <i data-lucide="calendar" class="w-3.5 h-3.5 text-slate-700"></i>
+          <span>Events</span>
+        </button>
+        <button class="admin-nav-tab px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 flex items-center space-x-1.5" data-admin-target="admin-backup-section">
+          <i data-lucide="database" class="w-3.5 h-3.5 text-purple-700"></i>
+          <span>Backup & Reset</span>
+        </button>
+      </div>
+
+      <!-- Scrollable Tab Content Container -->
+      <div class="flex-1 overflow-y-auto py-4 space-y-6">
+        
+        <!-- SECTION 1: APPLICATIONS MANAGER -->
+        <div id="admin-applications-section" class="admin-tab-section space-y-4">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <div class="flex items-center space-x-2">
+              <span id="admin-apps-count" class="px-3 py-1 rounded-full bg-forest-50 text-forest-800 text-xs font-bold border border-forest-200">
+                0 Applications
+              </span>
+              <span class="text-xs text-slate-500">Saved in browser localStorage</span>
+            </div>
+            <div class="flex items-center space-x-2 w-full sm:w-auto">
+              <input type="text" oninput="filterAdminApps(this.value)" placeholder="Search student or class..." class="bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900 focus:outline-none focus:border-forest-600 w-full sm:w-48">
+              <button onclick="exportApplicationsCSV()" class="px-3 py-1.5 rounded-lg bg-amberGold-500 hover:bg-amberGold-600 text-slate-950 font-bold text-xs flex items-center space-x-1 flex-shrink-0 shadow-sm">
+                <i data-lucide="download" class="w-3 h-3"></i>
+                <span>Export CSV</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto rounded-xl border border-slate-200">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-slate-50 text-[11px] text-slate-600 uppercase tracking-wider border-b border-slate-200">
+                  <th class="p-3">Ref ID</th>
+                  <th class="p-3">Student & Class</th>
+                  <th class="p-3">Parent & Mobile</th>
+                  <th class="p-3">Admission Status</th>
+                  <th class="p-3">Special Notes</th>
+                  <th class="p-3 text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="admin-applications-tbody" class="divide-y divide-slate-100">
+                <!-- Injected via js/admin.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- SECTION 2: CHANGE FEES EDITOR -->
+        <div id="admin-fees-section" class="admin-tab-section hidden space-y-6">
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4">
+            <div class="border-b border-slate-200 pb-3">
+              <h4 class="text-sm font-bold text-slate-900 flex items-center space-x-1.5">
+                <i data-lucide="calculator" class="w-4 h-4 text-forest-700"></i>
+                <span>Annual Tuition & Addon Fee Schedule (INR ₹)</span>
+              </h4>
+              <p class="text-xs text-slate-500 mt-0.5">Changing values here will immediately update the public fee calculator and save locally.</p>
+            </div>
+
+            <form id="admin-fees-form" class="space-y-4">
+              <!-- Tuition fees per division -->
+              <div>
+                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">1. Annual Division Tuition (INR ₹)</h5>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                  <div>
+                    <label class="block text-[11px] font-semibold text-slate-600 mb-1">Nursery, LKG, UKG</label>
+                    <input type="number" id="admin-fee-nursery" required class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-900 focus:outline-none focus:border-forest-600">
+                  </div>
+                  <div>
+                    <label class="block text-[11px] font-semibold text-slate-600 mb-1">Primary (Class I - V)</label>
+                    <input type="number" id="admin-fee-primary" required class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-900 focus:outline-none focus:border-forest-600">
+                  </div>
+                  <div>
+                    <label class="block text-[11px] font-semibold text-slate-600 mb-1">Middle (Class VI - VIII)</label>
+                    <input type="number" id="admin-fee-middle" required class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-900 focus:outline-none focus:border-forest-600">
+                  </div>
+                  <div>
+                    <label class="block text-[11px] font-semibold text-slate-600 mb-1">ICSE Secondary (Class IX - X)</label>
+                    <input type="number" id="admin-fee-icse" required class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-900 focus:outline-none focus:border-forest-600">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hostel / Boarding -->
+              <div>
+                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">2. Hostel & Boarding Options (INR ₹ / Year)</h5>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label class="block text-[11px] font-semibold text-slate-600 mb-1">Weekly Boarding (Mon - Fri)</label>
+                    <input type="number" id="admin-fee-hostel-weekly" required class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-900 focus:outline-none focus:border-forest-600">
+                  </div>
+                  <div>
+                    <label class="block text-[11px] font-semibold text-slate-600 mb-1">Full 7-Day Residential Boarding</label>
+                    <input type="number" id="admin-fee-hostel-full" required class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-900 focus:outline-none focus:border-forest-600">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Addons: Transport & Meals -->
+              <div>
+                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">3. Van Transport, Meals & Coaching (INR ₹ / Year)</h5>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div>
+                    <label class="block text-[11px] font-semibold text-slate-600 mb-1">School Bus / Van (Takdah/Rangliot)</label>
+                    <input type="number" id="admin-fee-transport" required class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-900 focus:outline-none focus:border-forest-600">
+                  </div>
+                  <div>
+                    <label class="block text-[11px] font-semibold text-slate-600 mb-1">School Fresh Hot Lunch Plan</label>
+                    <input type="number" id="admin-fee-lunch" required class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-900 focus:outline-none focus:border-forest-600">
+                  </div>
+                  <div>
+                    <label class="block text-[11px] font-semibold text-slate-600 mb-1">Special ICSE Remedial Coaching</label>
+                    <input type="number" id="admin-fee-coaching" required class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-900 focus:outline-none focus:border-forest-600">
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-3 text-right">
+                <button type="submit" class="px-6 py-2.5 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-forest-700/20">
+                  Save Fee Structure Changes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- SECTION 3: FACILITIES MANAGER (Add/Edit/Delete & Upload Facilities) -->
+        <div id="admin-facilities-section" class="admin-tab-section hidden space-y-6">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h4 class="text-sm font-bold text-slate-900 mb-3 flex items-center space-x-1.5">
+              <i data-lucide="plus-circle" class="w-4 h-4 text-terracotta-700"></i>
+              <span>Add or Update Campus Facility</span>
+            </h4>
+            <form id="admin-new-facility-form" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <input type="text" id="admin-fac-title" required placeholder="Facility Name (e.g. Modern Physics Lab)" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+                <select id="admin-fac-category" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+                  <option value="campus">Campus & Building</option>
+                  <option value="labs">Science & IT Labs</option>
+                  <option value="sports">Sports & Playground</option>
+                </select>
+                <input type="text" id="admin-fac-badge" placeholder="Badge (e.g. New Wing / ICSE Lab)" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <input type="text" id="admin-fac-specs" placeholder="Specifications (e.g. 1:1 Access, 40 Workstations)" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+                <div>
+                  <label class="block text-[11px] font-semibold text-slate-600 mb-1">Upload Facility Picture:</label>
+                  <input type="file" id="admin-fac-file" accept="image/*" class="text-xs text-slate-700 file:mr-2 file:py-1 file:px-2.5 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-slate-200 file:text-slate-800 hover:file:bg-slate-300 cursor-pointer">
+                  <input type="hidden" id="admin-fac-url">
+                </div>
+              </div>
+
+              <textarea id="admin-fac-desc" required rows="2" placeholder="Facility description and highlights..." class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600"></textarea>
+
+              <div class="text-right">
+                <button type="submit" class="px-5 py-2 rounded-xl bg-terracotta-700 hover:bg-terracotta-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-sm">
+                  Add Facility to Website
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Current Campus Facilities</h4>
+            <div id="admin-facilities-list" class="space-y-2.5">
+              <!-- Rendered via js/admin.js -->
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 4: PHOTO GALLERY & PICTURE UPLOADER -->
+        <div id="admin-gallery-section" class="admin-tab-section hidden space-y-6">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h4 class="text-sm font-bold text-slate-900 mb-3 flex items-center space-x-1.5">
+              <i data-lucide="upload-cloud" class="w-4 h-4 text-blue-700"></i>
+              <span>Upload New School Picture (Automatically Compressed & Saved Locally)</span>
+            </h4>
+            <form id="admin-new-gallery-form" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <input type="text" id="admin-gal-title" required placeholder="Picture Title (e.g. Science Fair 2026)" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+                <select id="admin-gal-category" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+                  <option value="Campus">Campus & Building</option>
+                  <option value="Academics">Classroom & Academics</option>
+                  <option value="Sports">Sports & Activities</option>
+                  <option value="Events">Cultural & Celebrations</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Select Photo File from Your Device *</label>
+                <input type="file" id="admin-gal-file" required accept="image/*" class="w-full text-xs text-slate-700 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-emerald-700 file:text-white hover:file:bg-emerald-800 cursor-pointer">
+              </div>
+
+              <input type="text" id="admin-gal-caption" placeholder="Short caption or description for visitors..." class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+
+              <div class="text-right">
+                <button type="submit" class="px-5 py-2 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-sm">
+                  Upload & Publish Picture
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">School Photo Gallery (Click trash to remove)</h4>
+            <div id="admin-gallery-grid" class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <!-- Rendered via js/admin.js -->
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 5: NOTICES MANAGER -->
+        <div id="admin-notices-section" class="admin-tab-section hidden space-y-6">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h4 class="text-sm font-bold text-slate-900 mb-3 flex items-center space-x-1.5">
+              <i data-lucide="plus-circle" class="w-4 h-4 text-forest-700"></i>
+              <span>Publish New Notice / Circular</span>
+            </h4>
+            <form id="admin-new-notice-form" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div class="sm:col-span-2">
+                  <input type="text" id="admin-notice-title" required placeholder="Circular Title..." class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+                </div>
+                <div>
+                  <select id="admin-notice-category" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+                    <option value="Admissions">Admissions</option>
+                    <option value="Academic">Academic</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Holiday">Holiday</option>
+                    <option value="General">General</option>
+                  </select>
+                </div>
+              </div>
+              <textarea id="admin-notice-content" required rows="2" placeholder="Full notice announcement text..." class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600"></textarea>
+              <div class="flex items-center justify-between">
+                <label class="flex items-center space-x-2 text-xs text-slate-700 cursor-pointer">
+                  <input type="checkbox" id="admin-notice-urgent" class="w-4 h-4 text-amberGold-600 rounded border-slate-300">
+                  <span class="font-medium">Mark as Urgent Alert</span>
+                </label>
+                <button type="submit" class="px-5 py-2 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-sm">
+                  Publish Circular
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Existing Public Circulars</h4>
+            <div class="overflow-x-auto rounded-xl border border-slate-200">
+              <table class="w-full text-left border-collapse">
+                <thead>
+                  <tr class="bg-slate-50 text-[11px] text-slate-600 uppercase tracking-wider border-b border-slate-200">
+                    <th class="p-3">Title</th>
+                    <th class="p-3">Category</th>
+                    <th class="p-3">Date</th>
+                    <th class="p-3">Urgent</th>
+                    <th class="p-3 text-right">Delete</th>
+                  </tr>
+                </thead>
+                <tbody id="admin-notices-tbody" class="divide-y divide-slate-100">
+                  <!-- Injected via js/admin.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 6: EVENTS MANAGER -->
+        <div id="admin-events-section" class="admin-tab-section hidden space-y-6">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h4 class="text-sm font-bold text-slate-900 mb-3 flex items-center space-x-1.5">
+              <i data-lucide="calendar-plus" class="w-4 h-4 text-terracotta-700"></i>
+              <span>Schedule New School Event</span>
+            </h4>
+            <form id="admin-new-event-form" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <input type="text" id="admin-event-title" required placeholder="Event Name (e.g. Science Exhibition)" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+                <input type="date" id="admin-event-date" required class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <input type="text" id="admin-event-time" placeholder="Time (e.g. 10:00 AM)" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+                <input type="text" id="admin-event-location" placeholder="Location (e.g. 6th Mile Ground)" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+                <select id="admin-event-category" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600">
+                  <option value="admissions">Admissions</option>
+                  <option value="sports">Sports</option>
+                  <option value="academic">Academic</option>
+                </select>
+              </div>
+              <textarea id="admin-event-desc" rows="2" placeholder="Brief event description..." class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-forest-600"></textarea>
+              <div class="text-right">
+                <button type="submit" class="px-5 py-2 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-sm">
+                  Add Event to Calendar
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Scheduled Events</h4>
+            <div class="overflow-x-auto rounded-xl border border-slate-200">
+              <table class="w-full text-left border-collapse">
+                <thead>
+                  <tr class="bg-slate-50 text-[11px] text-slate-600 uppercase tracking-wider border-b border-slate-200">
+                    <th class="p-3">Event Title</th>
+                    <th class="p-3">Date & Time</th>
+                    <th class="p-3">Category</th>
+                    <th class="p-3">RSVPs</th>
+                    <th class="p-3 text-right">Delete</th>
+                  </tr>
+                </thead>
+                <tbody id="admin-events-tbody" class="divide-y divide-slate-100">
+                  <!-- Injected via js/admin.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 7: STORAGE & BACKUP -->
+        <div id="admin-backup-section" class="admin-tab-section hidden space-y-6">
+          <div id="storage-metrics-display">
+            <!-- Metrics cards rendered here -->
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Export JSON -->
+            <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-3">
+              <div class="flex items-center space-x-2 text-slate-900 font-bold text-sm">
+                <i data-lucide="download-cloud" class="w-5 h-5 text-forest-700"></i>
+                <span>Export Local Data (JSON)</span>
+              </div>
+              <p class="text-xs text-slate-600">
+                Download a complete copy of all applications, fees, facilities, gallery photos, notices, and events to a `.json` backup file.
+              </p>
+              <button onclick="downloadJSONBackup()" class="px-4 py-2.5 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-sm">
+                Download Backup JSON
+              </button>
+            </div>
+
+            <!-- Import JSON -->
+            <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-3">
+              <div class="flex items-center space-x-2 text-slate-900 font-bold text-sm">
+                <i data-lucide="upload-cloud" class="w-5 h-5 text-amberGold-600"></i>
+                <span>Import Backup (JSON)</span>
+              </div>
+              <p class="text-xs text-slate-600">
+                Restore data from a previously exported `.json` file to transfer data between computers or browsers.
+              </p>
+              <input type="file" accept=".json" onchange="importJSONBackup(event)" class="text-xs text-slate-700 file:mr-2 file:py-2 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-slate-200 file:text-slate-800 hover:file:bg-slate-300 cursor-pointer">
+            </div>
+          </div>
+
+          <!-- Reset Defaults -->
+          <div class="p-4 rounded-2xl bg-rose-50 border border-rose-200 flex items-center justify-between gap-4">
+            <div>
+              <div class="text-xs font-bold text-rose-900">Reset to Initial Seed Records</div>
+              <div class="text-[11px] text-slate-600">Restore factory sample applications, fees, facilities, and notices.</div>
+            </div>
+            <button onclick="resetAllDataDefaults()" class="px-3.5 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs transition shadow-sm">
+              Reset Data
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       ADMISSION INQUIRY MODAL (Application Form - Light Theme)
+       ======================================================================== -->
+  <div id="inquiry-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div class="modal-content bg-white max-w-xl w-full rounded-3xl border border-slate-200 p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+      
+      <button onclick="closeModal('inquiry-modal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 transition focus:outline-none">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="mb-6">
+        <span class="text-xs font-bold text-forest-700 uppercase tracking-widest">Takdah Grace Academy • Admissions</span>
+        <h3 class="text-2xl font-serif-academy font-bold text-slate-900 mt-1">Student Admission Form (2026-27)</h3>
+        <p class="text-xs text-slate-500 mt-1">6th Mile, Naya Busty, Dist. Darjeeling | Director: Mr. Bhupen Dukpa | Principal: Mr. Chandan Singh</p>
+      </div>
+
+      <form id="inquiry-form" class="space-y-4">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Student's Full Name *</label>
+            <input type="text" id="inquiry-student-name" required placeholder="e.g. Aryan Tamang" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-forest-600">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Applying for Class *</label>
+            <select id="inquiry-grade" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-forest-600">
+              <option value="Class Nursery">Class Nursery</option>
+              <option value="Class LKG">Class LKG</option>
+              <option value="Class UKG">Class UKG</option>
+              <option value="Class I - V (Primary)">Class I - V (Primary)</option>
+              <option value="Class VI - VIII (Middle)">Class VI - VIII (Middle)</option>
+              <option value="Class IX (ICSE)" selected>Class IX (ICSE)</option>
+              <option value="Class X (ICSE)">Class X (ICSE)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Parent / Guardian Name *</label>
+            <input type="text" id="inquiry-parent-name" required placeholder="e.g. Ramesh Dukpa" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-forest-600">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Contact Mobile Number *</label>
+            <input type="tel" id="inquiry-mobile" required placeholder="+91 98765 43210" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-forest-600">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Village / Locality *</label>
+            <input type="text" id="inquiry-location" required placeholder="e.g. 6th Mile, Naya Busty / Takdah" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-forest-600">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Admission Type</label>
+            <select id="inquiry-admission-type" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-forest-600">
+              <option value="Day Scholar">Day Scholar</option>
+              <option value="Hostel / Boarder">Hostel / Boarder</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Special Notes or Transportation Requirements</label>
+          <textarea id="inquiry-notes" rows="2" placeholder="e.g. Need bus pickup from Rangliot point..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-forest-600"></textarea>
+        </div>
+
+        <div class="pt-3">
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-terracotta-700 hover:bg-terracotta-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-terracotta-700/25 flex items-center justify-center space-x-2">
+            <span>Submit Admission Form (Save to Portal)</span>
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       CURRICULUM SYLLABUS DOWNLOAD MODAL
+       ======================================================================== -->
+  <div id="curriculum-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div class="modal-content bg-white max-w-lg w-full rounded-3xl border border-slate-200 p-6 relative shadow-2xl">
+      <button onclick="closeModal('curriculum-modal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 transition focus:outline-none">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="text-center space-y-3 py-4">
+        <div class="w-16 h-16 rounded-2xl bg-forest-50 text-forest-800 border border-forest-200 flex items-center justify-center mx-auto">
+          <i data-lucide="file-text" class="w-8 h-8"></i>
+        </div>
+        <h3 id="curriculum-modal-title" class="text-xl font-serif-academy font-bold text-slate-900">
+          ICSE Syllabus & Booklist Dossier
+        </h3>
+        <p class="text-xs text-slate-600 max-w-sm mx-auto">
+          Contains class book lists, examination evaluation pattern, uniform guidelines, and academic schedule for Takdah Grace Academy.
+        </p>
+
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 font-mono text-center">
+          <span id="curriculum-modal-filename" class="font-bold">TGA-ICSE-Curriculum-2026.pdf</span>
+          <span class="text-slate-500 block text-[10px] mt-0.5">PDF • 3.2 MB • Official Syllabus Guide</span>
+        </div>
+
+        <div class="pt-3 flex gap-3">
+          <button onclick="downloadCurriculumFile()" class="flex-1 py-3 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-sm">
+            Download Document
+          </button>
+          <button onclick="closeModal('curriculum-modal')" class="px-5 py-3 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 text-xs font-semibold">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="bg-forest-950 text-slate-300 text-xs pt-16 pb-12 relative z-30 border-t border-forest-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-forest-900">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-forest-800 border border-amberGold-400 flex items-center justify-center font-crest font-bold text-amberGold-400 text-lg shadow-sm">
+              GA
+            </div>
+            <div>
+              <div class="font-crest font-bold text-white text-base">TAKDAH GRACE ACADEMY</div>
+              <div class="text-[10px] text-amberGold-400 uppercase tracking-widest font-semibold">Class Nursery to ICSE</div>
+            </div>
+          </div>
+          
+          <p class="text-slate-300 text-xs leading-relaxed max-w-sm">
+            <strong>Address:</strong> 6th Mile, Naya Busty, P.O. Takdah Cantonment, Dist. Darjeeling, West Bengal, PIN – 734222.
+          </p>
+
+          <div class="p-3 rounded-xl bg-forest-900/80 border border-forest-800 space-y-1.5 text-xs text-slate-200 max-w-sm">
+            <div><span class="text-amberGold-400 font-semibold">Director:</span> Mr. Bhupen Dukpa</div>
+            <div><span class="text-emerald-400 font-semibold">Principal:</span> Mr. Chandan Singh</div>
+          </div>
+
+          <div class="space-y-1 text-slate-300 text-xs">
+            <div class="flex items-center space-x-2">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-amberGold-400"></i>
+              <span>Office: +91 98000 00000 / +91 (0354) Takdah</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i data-lucide="mail" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <span>info@takdahgraceacademy.org</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Academics</h4>
+          <ul class="space-y-2">
+            <li><a href="#academics" class="hover:text-amberGold-400 transition">Class Nursery, LKG, UKG</a></li>
+            <li><a href="#academics" class="hover:text-amberGold-400 transition">Primary Section (Class I-V)</a></li>
+            <li><a href="#academics" class="hover:text-amberGold-400 transition">Middle School (Class VI-VIII)</a></li>
+            <li><a href="#academics" class="hover:text-amberGold-400 transition">ICSE Secondary (Class IX-X)</a></li>
+            <li><a href="#facilities" class="hover:text-amberGold-400 transition">Science Laboratories</a></li>
+            <li><a href="#facilities" class="hover:text-amberGold-400 transition">Computer Applications</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Portals & Tools</h4>
+          <ul class="space-y-2">
+            <li><button onclick="openModal('tracker-modal')" class="hover:text-amberGold-400 transition text-left">Track Admission Status</button></li>
+            <li><button onclick="openAdminDashboard()" class="hover:text-amberGold-400 transition text-left">Staff & Admin Dashboard</button></li>
+            <li><a href="#tuition-calc" class="hover:text-amberGold-400 transition">Fee Calculator (INR)</a></li>
+            <li><a href="#gallery" class="hover:text-amberGold-400 transition">Campus Photo Gallery</a></li>
+            <li><a href="#notices" class="hover:text-amberGold-400 transition">Notice Board Circulars</a></li>
+            <li><a href="#events" class="hover:text-amberGold-400 transition">Calendar & RSVP</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Notice Alerts</h4>
+          <p class="text-[11px] text-slate-400 leading-relaxed">
+            Subscribe to receive circulars and holiday notifications directly.
+          </p>
+
+          <form id="newsletter-form" class="space-y-2">
+            <input type="text" id="newsletter-email" required placeholder="Parent mobile number or email" class="w-full bg-forest-900 border border-forest-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-amberGold-400">
+            <button type="submit" class="w-full py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition">
+              Subscribe to Notices
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+        <div>
+          © 2026 Takdah Grace Academy. 6th Mile, Naya Busty, Dist. Darjeeling, West Bengal. All rights reserved.
+        </div>
+        <div class="flex items-center space-x-6">
+          <a href="#" class="hover:text-white transition">Director: Mr. Bhupen Dukpa</a>
+          <span>•</span>
+          <a href="#" class="hover:text-white transition">Principal: Mr. Chandan Singh</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data-store.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/campus-map.js"></script>
+</body>
+</html>
